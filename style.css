@@ -222,7 +222,7 @@ mark {
 
 @font-face {
     font-family: 'stronaWCAG';
-    src: url("assets/fonts/stronaWCAG.svg?#stronaWCAG") format("svg");
+    src: url("assets/fonts/stronaWCAG.svg") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -231,8 +231,7 @@ mark {
 i,
 .main__quick ul li a:before,
 a:before {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'stronaWCAG' !important;
+    font-family: 'stronaWCAG'!important;
     speak: never;
     font-style: normal;
     font-weight: normal;
@@ -388,11 +387,34 @@ a:before {
 }
 
 .icon-font-solid:before {
-    content: "\e905";
+    content: "A";
 }
 
 .icon-adjust-solid:before {
-    content: "\e906";
+    content: '';
+    display: block;
+    background: url(assets/contrast.png);
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+.icon-adjust-solid1:before {
+    content: '';
+    display: block;
+    background: url(assets/contrast1.png);
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+.icon-adjust-solid2:before {
+    content: '';
+    display: block;
+    background: url(assets/contrast2.png);
+    background-size: contain;
+    width: 18px;
+    height: 18px;
 }
 
 .icon-facebook-f-brands:before {
@@ -2687,6 +2709,994 @@ textarea {
     opacity: 1;
 }
 
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-webkit-input-placeholder,
+.contrast-black-white input[type="text"]::-webkit-input-placeholder,
+.contrast-black-white input[type="search"]::-webkit-input-placeholder,
+.contrast-black-white input[type="email"]::-webkit-input-placeholder,
+.contrast-black-white input[type="number"]::-webkit-input-placeholder,
+.contrast-black-white input[type="password"]::-webkit-input-placeholder,
+.contrast-black-white input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-white select::-webkit-input-placeholder,
+.contrast-black-white textarea::-webkit-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-moz-placeholder,
+.contrast-black-white input[type="text"]::-moz-placeholder,
+.contrast-black-white input[type="search"]::-moz-placeholder,
+.contrast-black-white input[type="email"]::-moz-placeholder,
+.contrast-black-white input[type="number"]::-moz-placeholder,
+.contrast-black-white input[type="password"]::-moz-placeholder,
+.contrast-black-white input[type="tel"]::-moz-placeholder,
+.contrast-black-white select::-moz-placeholder,
+.contrast-black-white textarea::-moz-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input:-ms-input-placeholder,
+.contrast-black-white input[type="text"]:-ms-input-placeholder,
+.contrast-black-white input[type="search"]:-ms-input-placeholder,
+.contrast-black-white input[type="email"]:-ms-input-placeholder,
+.contrast-black-white input[type="number"]:-ms-input-placeholder,
+.contrast-black-white input[type="password"]:-ms-input-placeholder,
+.contrast-black-white input[type="tel"]:-ms-input-placeholder,
+.contrast-black-white select:-ms-input-placeholder,
+.contrast-black-white textarea:-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
+.contrast-black-white .input::-ms-input-placeholder,
+.contrast-black-white input[type="text"]::-ms-input-placeholder,
+.contrast-black-white input[type="search"]::-ms-input-placeholder,
+.contrast-black-white input[type="email"]::-ms-input-placeholder,
+.contrast-black-white input[type="number"]::-ms-input-placeholder,
+.contrast-black-white input[type="password"]::-ms-input-placeholder,
+.contrast-black-white input[type="tel"]::-ms-input-placeholder,
+.contrast-black-white select::-ms-input-placeholder,
+.contrast-black-white textarea::-ms-input-placeholder {
+    color: var(--white);
+    opacity: 1;
+}
+
 .contrast-black-white .input::-webkit-input-placeholder, .contrast-black-white input[type="text"]::-webkit-input-placeholder, .contrast-black-white input[type="search"]::-webkit-input-placeholder, .contrast-black-white input[type="email"]::-webkit-input-placeholder, .contrast-black-white input[type="number"]::-webkit-input-placeholder, .contrast-black-white input[type="password"]::-webkit-input-placeholder, .contrast-black-white input[type="tel"]::-webkit-input-placeholder, .contrast-black-white select::-webkit-input-placeholder, .contrast-black-white textarea::-webkit-input-placeholder {
     color: var(--white);
     opacity: 1;
@@ -2756,6 +3766,994 @@ textarea {
     border-color: var(--yellow);
     background: var(--black);
     color: var(--yellow);
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-webkit-input-placeholder,
+.contrast-black-yellow input[type="text"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="search"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="email"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="number"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="password"]::-webkit-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-webkit-input-placeholder,
+.contrast-black-yellow select::-webkit-input-placeholder,
+.contrast-black-yellow textarea::-webkit-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-moz-placeholder,
+.contrast-black-yellow input[type="text"]::-moz-placeholder,
+.contrast-black-yellow input[type="search"]::-moz-placeholder,
+.contrast-black-yellow input[type="email"]::-moz-placeholder,
+.contrast-black-yellow input[type="number"]::-moz-placeholder,
+.contrast-black-yellow input[type="password"]::-moz-placeholder,
+.contrast-black-yellow input[type="tel"]::-moz-placeholder,
+.contrast-black-yellow select::-moz-placeholder,
+.contrast-black-yellow textarea::-moz-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input:-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]:-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]:-ms-input-placeholder,
+.contrast-black-yellow select:-ms-input-placeholder,
+.contrast-black-yellow textarea:-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
+}
+
+.contrast-black-yellow .input::-ms-input-placeholder,
+.contrast-black-yellow input[type="text"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="search"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="email"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="number"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="password"]::-ms-input-placeholder,
+.contrast-black-yellow input[type="tel"]::-ms-input-placeholder,
+.contrast-black-yellow select::-ms-input-placeholder,
+.contrast-black-yellow textarea::-ms-input-placeholder {
+    color: var(--yellow);
+    opacity: 1;
 }
 
 .contrast-black-yellow .input::-webkit-input-placeholder,
