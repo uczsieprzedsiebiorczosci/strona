@@ -222,7 +222,7 @@ mark {
 
 @font-face {
     font-family: 'stronaWCAG';
-    src: url("assets/fonts/stronaWCAG.ttf?dxc0qr") format("truetype"), url("assets/fonts/stronaWCAG.woff?dxc0qr") format("woff"), url("assets/fonts/stronaWCAG.svg?dxc0qr#stronaWCAG") format("svg");
+    src: url("assets/fonts/stronaWCAG.svg?#stronaWCAG") format("svg");
     font-weight: normal;
     font-style: normal;
     font-display: block;
